@@ -17,10 +17,14 @@ namespace Chapter_1
             //var test = new Q1_2();
             //var result = test.ReverseString("clement");
             //Console.WriteLine(result);
-            
 
-            var test = new Q1_3();
-            var result = test.RemoveDuplicate("clmenenctt").Trim();
+
+            //var test = new Q1_3();
+            //var result = test.RemoveDuplicate("clmenenctt").Trim();
+            //Console.WriteLine(result);
+
+            var test = new Q1_4();
+            var result = test.AreAnagrams("tokyo", "kyoto");
             Console.WriteLine(result);
 
             Console.ReadLine();
