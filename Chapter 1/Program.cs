@@ -23,8 +23,12 @@ namespace Chapter_1
             //var result = test.RemoveDuplicate("clmenenctt").Trim();
             //Console.WriteLine(result);
 
-            var test = new Q1_4();
-            var result = test.AreAnagrams("tokyo", "kyoto");
+            //var test = new Q1_4();
+            //var result = test.AreAnagrams("tokyo", "kyoto");
+            //Console.WriteLine(result);
+
+            var test = new Q1_5();
+            var result = test.ReplaceSpaces(" Tokyo might be a nice place");
             Console.WriteLine(result);
 
             Console.ReadLine();
