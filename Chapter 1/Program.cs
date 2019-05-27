@@ -27,10 +27,25 @@ namespace Chapter_1
             //var result = test.AreAnagrams("tokyo", "kyoto");
             //Console.WriteLine(result);
 
-            var test = new Q1_5();
-            var result = test.ReplaceSpaces(" Tokyo might be a nice place");
-            Console.WriteLine(result);
+            //var test = new Q1_5();
+            //var result = test.ReplaceSpaces(" Tokyo might be a nice place");
+            //Console.WriteLine(result);
 
+            var test = new Q1_6();
+            const int imageSize = 5;
+            int[,] Image = new int[imageSize, imageSize] { { 1, 2, 3, 4, 5 },
+                                                            {6,7,8,9,10},
+                                                            {11,12,13,14,15 }, 
+                                                            {16,17,18,19,20}, 
+                                                            {21,22,23,24,25} };
+
+            Console.WriteLine("***********Initial Image Matrix**************");
+            test.OutputMatrix(Image, imageSize);
+            Console.WriteLine();
+
+            Console.WriteLine("***********Rotated Image Matrix**************");
+            var RotatedImage = test.RotateImageMatrix(Image, imageSize);
+            test.OutputMatrix(RotatedImage, imageSize);
             Console.ReadLine();
 
         }
