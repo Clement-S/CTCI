@@ -51,6 +51,7 @@
     <Compile Include="Q1_4.cs" />
     <Compile Include="Q1_5.cs" />
     <Compile Include="Q1_6.cs" />
+    <Compile Include="Q1_7.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

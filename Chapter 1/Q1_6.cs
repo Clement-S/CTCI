@@ -11,11 +11,13 @@ namespace Chapter_1
         public int[,] RotateImageMatrix(int[,] matrix, int N)
         {
             var size = N - 1;
+            // Matrix to hold rotation
             int[,] rotatedMatrix = new int[N, N];
             for (var i = 0; i < N; i++)
             {
                 for (var j = 0; j < N; j++)
                 {
+                    // Breadth first search, store in locations in new matrix
                     rotatedMatrix[j, size] = matrix[i, j];
                 }
                 size--;
