@@ -47,17 +47,21 @@ namespace Chapter_1
             //var RotatedImage = test.RotateImageMatrix(Image, imageSize);
             //test.OutputMatrix(RotatedImage, imageSize);
 
-            var test = new Q1_7();
-            const int imageSize = 4;
-            int[,] Image = new int[imageSize, imageSize] { { 1, 2, 3, 4 },
-                                                           { 4, 5, 0, 6,},
-                                                           {7, 0, 9, 4},
-                                                           {6, 7, 2, 1 } };
-            Console.WriteLine("***********Initial Image Matrix**************");
-            test.OutputMatrix(Image, imageSize, imageSize);
+            //var test = new Q1_7();
+            //const int imageSize = 4;
+            //int[,] Image = new int[imageSize, imageSize] { { 1, 2, 3, 4 },
+            //                                               { 4, 5, 0, 6,},
+            //                                               {7, 1, 9, 4},
+            //                                               {6, 7, 2, 1 } };
+            //Console.WriteLine("***********Initial Image Matrix**************");
+            //test.OutputMatrix(Image, imageSize, imageSize);
 
-            Console.WriteLine("***********Zeroed Image Matrix**************");
-            test.FindZeroAndReplaceRowAndColumn(Image, imageSize, imageSize);
+            //Console.WriteLine("***********Zeroed Image Matrix**************");
+            //test.FindZeroAndReplaceRowAndColumn(Image, imageSize, imageSize);
+
+            var test = "waterbottle";
+            var isRotation = test.IsRotation("erbottlewat");
+            Console.WriteLine("Rotation is {0}", isRotation);
             Console.ReadLine();
 
         }

@@ -29,6 +29,7 @@ namespace Chapter_1
                 }
             }
 
+            // ToDo: move the below into a function and then call in the if statement above
             // Now replace values in the matrix using the row and column details
             // first replace entire row with zeros
             for (var ii = 0; ii < N; ii++)
