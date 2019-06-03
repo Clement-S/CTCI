@@ -11,10 +11,11 @@ namespace Chapter_1
     {
         public bool AreAnagrams(string firstInput, string secondInput)
         {
-            // If the strings lenght are different then they cannot be anagrams
+            // If the strings length are different then they cannot be anagrams
             if (firstInput.Length != secondInput.Length)
                 return false;
 
+            // Then sort the strings and compare
             var firstInputCharacters = firstInput.ToCharArray();
             Array.Sort(firstInputCharacters, new CaseInsensitiveComparer());
 

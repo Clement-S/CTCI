@@ -8,7 +8,7 @@ namespace Chapter_1
 {
     static class Q1_8
     {
-        public static bool IsRotation(this String s1, String s2)
+        public static bool IsRotation(this string s1, string s2)
         {
             // There lengths must be same 
             // concat of s1 + s1 should have s2 has a substring
