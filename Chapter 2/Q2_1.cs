@@ -23,6 +23,8 @@ namespace Chapter_2
                 Console.WriteLine(i);
             }
 
+            Console.WriteLine($"The length of the list is {myLinkedList.LengthOfList()}");
+
             // calls the new method to remove duplicates
             // Decided to add this method to my implementation of Linkedlist
             myLinkedList.RemoveDuplicates();
@@ -33,6 +35,8 @@ namespace Chapter_2
             {
                 Console.WriteLine(i);
             }
+
+            Console.WriteLine($"The length of the list is {myLinkedList.LengthOfList()}");
         }
     }
 }

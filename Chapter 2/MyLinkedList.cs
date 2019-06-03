@@ -112,8 +112,45 @@
             return null;
         }
 
-        public void FindNthToLastElement()
+        public T FindNthToLastElement(int nthToLastElement)
         {
+            var length = LengthOfList();
+
+            // in a single linked list, subtract from the length to get the position counting from the front.
+            var numberOfNodeToReturn = length - nthToLastElement;
+
+            var counter = 0;            
+
+            Node<T> searchNode = Head;
+
+            while (searchNode != null && counter <= numberOfNodeToReturn)
+            {                
+                if (counter == numberOfNodeToReturn)
+                    return searchNode.Data;
+                else
+                {
+                    counter++;
+                    searchNode = searchNode.Next;
+                }
+                
+            }
+
+            return default(T);
+        }
+
+        public int LengthOfList()
+        {
+            var length = 0;
+
+            Node<T> searchNode = Head;
+
+            while (searchNode != null)
+            {
+                length++;
+                searchNode = searchNode.Next;
+            }
+
+            return length;
 
         }
 

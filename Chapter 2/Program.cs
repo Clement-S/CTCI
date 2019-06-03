@@ -10,11 +10,12 @@ namespace Chapter_2
     {
         static void Main(string[] args)
         {
-            var test = new Q2_1<int>();
-            
-            // create list with duplicates and removes the duplicates
-            test.RemoveDuplicates();
+            //var test = new Q2_1<int>();            
+            //// create list with duplicates and removes the duplicates
+            //test.RemoveDuplicates();
 
+            var test = new Q2_2<int>();
+            test.FindNthToLastElement(2);
             Console.ReadLine();
 
         }
