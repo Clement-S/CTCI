@@ -116,7 +116,7 @@
         {
             var length = LengthOfList();
 
-            // in a single linked list, subtract from the length to get the position counting from the front.
+            // in a single linked list, subtract the nth from the length to get the position when counting from the front.
             var numberOfNodeToReturn = length - nthToLastElement;
 
             var counter = 0;            

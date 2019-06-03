@@ -15,7 +15,7 @@ namespace Chapter_2
             //test.RemoveDuplicates();
 
             var test = new Q2_2<int>();
-            test.FindNthToLastElement(2);
+            test.FindNthToLastElement(5);
             Console.ReadLine();
 
         }

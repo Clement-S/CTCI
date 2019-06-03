@@ -8,7 +8,7 @@ namespace Chapter_2
 {
     class Q2_2<T>
     {
-        public void FindNthToLastElement(int nthelement)
+        public void FindNthToLastElement(int nthElement)
         {
             MyLinkedList<int> myLinkedList = new MyLinkedList<int>();
             myLinkedList.Add(2);
@@ -23,8 +23,10 @@ namespace Chapter_2
                 Console.WriteLine(i);
             }
 
-            var value = myLinkedList.FindNthToLastElement(2);
-            Console.WriteLine($"The {nthelement} to Last element of the list is { value }");
+            //Added this function to my implementation of Linkedlist
+            var value = myLinkedList.FindNthToLastElement(nthElement);
+
+            Console.WriteLine($"The {nthElement} to Last element of the list is { value }");
         }
     }
 }
