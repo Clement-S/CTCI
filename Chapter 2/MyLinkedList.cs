@@ -35,7 +35,7 @@
             }
 
             CurrentNode.Next = new Node<T>(data);
-        }
+        }       
 
         public void AddFirst(T data)
         {

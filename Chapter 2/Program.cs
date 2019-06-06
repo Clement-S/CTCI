@@ -14,8 +14,11 @@ namespace Chapter_2
             //// create list with duplicates and removes the duplicates
             //test.RemoveDuplicates();
 
-            var test = new Q2_2<int>();
-            test.FindNthToLastElement(5);
+            //var test = new Q2_2<int>();
+            //test.FindNthToLastElement(5);
+
+            var test = new Q2_3<int>();
+            test.DeleteNodeInMiddle(new Node<int>(7));
             Console.ReadLine();
 
         }
